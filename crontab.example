@@ -1,0 +1,78 @@
+# Cold Outreach — example cron schedules (all times Asia/Kolkata / IST)
+#
+# Install:
+#   crontab -e
+#   (paste ONE of the schedules below, save, exit)
+#
+# Verify installed:
+#   crontab -l
+#
+# Disable temporarily (comment out lines):
+#   crontab -e   →   put # in front of each line, save
+#
+# Monitor:
+#   tail -f /home/primathon/Documents/p_projet/ColdOutrichAutoEmail/logs/cron-$(date +\%Y-\%m-\%d).log
+#
+# Emergency stop (kill all queued cron jobs for this script):
+#   pkill -f send-batch.sh
+#   crontab -r          # nukes the whole crontab — keep a backup
+#
+# NOTES:
+# - Mon-Fri only (`* * 1-5` at the end). Weekends skipped both in cron AND in the wrapper script.
+# - The wrapper enforces nvm PATH and weekend skipping defensively.
+# - --daily-cap is a HARD ceiling. Even if cron mis-fires, you cannot exceed it.
+# - Always include --live in cron entries. Without it, the script does a dry-run and nothing sends.
+# - First week: use the WARM-UP schedule below. After day 7, switch to a STEADY-STATE schedule.
+
+
+# ============================================================
+# WARM-UP WEEK (recommended for first 7 days on a fresh account)
+# ============================================================
+# Conservative ramp. Replace your existing crontab daily — or use
+# different --daily-cap values via a single schedule and just adjust.
+
+# Day 1 (10/day, 1 batch — keep it simple, watch for bounces)
+# 30 10 * * 1-5 /home/primathon/Documents/p_projet/ColdOutrichAutoEmail/scripts/send-batch.sh --live --cap 10 --daily-cap 10
+
+# Day 2 (15/day, 2 batches)
+# 30 10 * * 1-5 /home/primathon/Documents/p_projet/ColdOutrichAutoEmail/scripts/send-batch.sh --live --cap 8 --daily-cap 15
+# 30 15 * * 1-5 /home/primathon/Documents/p_projet/ColdOutrichAutoEmail/scripts/send-batch.sh --live --cap 7 --daily-cap 15
+
+# Day 3 (20/day, 2 batches)
+# 30 10 * * 1-5 /home/primathon/Documents/p_projet/ColdOutrichAutoEmail/scripts/send-batch.sh --live --cap 10 --daily-cap 20
+# 30 15 * * 1-5 /home/primathon/Documents/p_projet/ColdOutrichAutoEmail/scripts/send-batch.sh --live --cap 10 --daily-cap 20
+
+
+# ============================================================
+# STEADY STATE — 30 emails/day, 3 batches (RECOMMENDED for personal Gmail)
+# ============================================================
+# 10 each at 9:30 AM / 1:00 PM / 5:00 PM IST, Mon–Fri.
+# Daily-cap is 30 so even if cron mis-fires you stay safe.
+# Prefers T1 (named-person) for the morning batch — highest-value time.
+
+30 9  * * 1-5 /home/primathon/Documents/p_projet/ColdOutrichAutoEmail/scripts/send-batch.sh --live --cap 10 --daily-cap 30 --template T1_NAMED_PERSON
+0  13 * * 1-5 /home/primathon/Documents/p_projet/ColdOutrichAutoEmail/scripts/send-batch.sh --live --cap 10 --daily-cap 30
+0  17 * * 1-5 /home/primathon/Documents/p_projet/ColdOutrichAutoEmail/scripts/send-batch.sh --live --cap 10 --daily-cap 30
+
+
+# ============================================================
+# AGGRESSIVE — 40 emails/day, 4 batches (use only after 2+ weeks no bounces)
+# ============================================================
+# Higher cap = higher spam-flag risk on personal Gmail. Watch your reputation.
+#
+# 30 9  * * 1-5 /home/primathon/Documents/p_projet/ColdOutrichAutoEmail/scripts/send-batch.sh --live --cap 10 --daily-cap 40 --template T1_NAMED_PERSON
+# 30 12 * * 1-5 /home/primathon/Documents/p_projet/ColdOutrichAutoEmail/scripts/send-batch.sh --live --cap 10 --daily-cap 40
+# 30 15 * * 1-5 /home/primathon/Documents/p_projet/ColdOutrichAutoEmail/scripts/send-batch.sh --live --cap 10 --daily-cap 40
+# 30 18 * * 1-5 /home/primathon/Documents/p_projet/ColdOutrichAutoEmail/scripts/send-batch.sh --live --cap 10 --daily-cap 40
+
+
+# ============================================================
+# CRON FIELDS REFERENCE
+# ============================================================
+#  ┌───── minute (0–59)
+#  │ ┌───── hour (0–23, 24-hour clock, local timezone)
+#  │ │ ┌───── day of month (1–31)
+#  │ │ │ ┌───── month (1–12)
+#  │ │ │ │ ┌───── day of week (0=Sun, 1=Mon, …, 7=Sun) — 1-5 means Mon–Fri
+#  │ │ │ │ │
+#  * * * * *  <command>
