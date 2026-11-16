@@ -130,3 +130,5 @@ npm run mail:reset -- --confirm-reset
 The reset backs up every JSON file in `data/email_json/` and all `sent.log`, `sent.1.log`, etc. files into a new folder under `archive/campaign-resets/`. It clears `sent`, `sent_at`, and `sent_account` in the active JSON files and removes the active account logs. Recipient content and `manual_skip` review flags stay unchanged. Original source batches under `data/upcoming_json/` are not modified. You can then update the active list and run `npm run mail:stats` and `npm run mail:preview`.
 
 **Daily limits reset too:** the daily count comes from the archived logs. If you reset during a day when you already sent mail, account for those messages when setting `--daily-cap`. A reset makes previously sent addresses eligible again; it does not undo or delete emails from Gmail. Do not reset while a send is running. If interrupted during a reset, inspect the backup folder and queue/log files before sending.
+
+For a reusable prompt to give another AI when preparing new contact JSON, see [prompt.md](prompt.md).
