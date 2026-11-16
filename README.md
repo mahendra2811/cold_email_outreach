@@ -1,5 +1,7 @@
 # Cold Outreach CLI
 
+For the current JSON sending workflow and short commands, see [SEND_EMAILS.md](SEND_EMAILS.md).
+
 ## What it does
 
 A Node.js CLI that reads HR/recruiter rows from an Excel file (`Active_Queue` tab), fills email templates with per-row variables, and sends throttled, plain-text emails from your personal Gmail account. Resumable, dry-run by default, and safe enough that you have to explicitly opt in (`--live`) to actually send.
@@ -22,7 +24,7 @@ cp .env.example .env
 
 Required Excel tabs:
 - `Active_Queue` — must contain columns: `email`, `template_id`, `template_variables` (JSON), `suggested_subject`, plus optional `manual_skip`, `person_full_name`, `company_guess`
-- `Templates` — column A is `template_id`, column B is the body starting with `SUBJECT: <subject>\n\n<body>`. Required template IDs: `T1_NAMED_PERSON` and `T2_ROLE_INBOX`.
+- `Templates` — column A is `template_id`, column B is the body starting with `SUBJECT: <subject>\n\n<body>`. Add template IDs `T1_NAMED_PERSON` or `T2_ROLE_INBOX` when you want to use templates; rows with their own `body` do not require a template.
 
 ## First run (safety)
 
@@ -164,8 +166,8 @@ Tab names are case-sensitive and must match exactly. If your Excel uses differen
 **`ERROR: invalid JSON` on a row**
 The `template_variables` cell for that row isn't valid JSON. The row is skipped, others continue. Fix the cell, save the Excel, and re-run — already-sent rows will not be retried.
 
-**`Templates sheet missing required template(s)`**
-The `Templates` tab must contain rows where column A is exactly `T1_NAMED_PERSON` and `T2_ROLE_INBOX`. Each body in column B must start with `SUBJECT: <line>` followed by a blank line, then the body.
+**`no body provided and template is missing`**
+Fill the row’s `body` cell, or add its `template_id` and body to the `Templates` tab.
 
 **Gmail rate-limit errors mid-run**
 Reduce `--cap`, increase `--delay`. The script sleeps 10s on any send error and continues — it does not retry the failed row.
@@ -184,3 +186,64 @@ Reduce `--cap`, increase `--delay`. The script sleeps 10s on any send error and 
 - No database — `sent.log` is the source of truth
 - No OAuth — SMTP + App Password is intentional (zero infra)
 - No writing back to Excel — the queue is read-only
+
+## Per-recipient emails and attachments
+
+In `excel/HR_Contacts.xlsx`, use the `Active_Queue` tab. Each row is one recipient:
+
+- `email`: recipient address; `person_full_name`: name; `company_guess`: company; `title`: optional job title.
+- `subject`: the email subject (falls back to `suggested_subject` if blank).
+- Message: use either `body` for the whole message, or use `greeting`, `paragraph_1` through `paragraph_5`, and `closing`. Nonempty message parts are joined in that order with blank lines. Do not fill both `body` and the separate parts for the same row. If both are blank, the matching template is used.
+- `attachment`: optional local file path, such as `resume.pdf` or `/Users/you/Documents/resume.pdf`. Relative paths are resolved from the workbook's folder (`excel/` for the default workbook). Separate multiple paths with semicolons. Missing files cause the row to be skipped with an error.
+- `reply_to`: optional email address for replies. If blank, replies go to `mahendrapuniya92@gmail.com`; the actual sender is still the Gmail account selected by `--account`.
+- `template_id`: for new rows with a body or message parts, leave blank to use `T1_NAMED_PERSON`, or set a template ID explicitly. Existing template rows continue to work. `manual_skip` excludes a row when nonempty.
+
+For new rows, `template_variables` can be blank; `{first_name}`, `{full_name}` and `{company}` are filled from the name and company columns. If JSON is supplied, it takes precedence as before. The job title is informational. Review with `npm run preview` before sending; preview shows reply-to and attachment paths. A proof copy of the first email, including attachments, is sent to the owner before a live batch. Sent logs still prevent another email to the same recipient on that account, even if its subject or body changes.
+
+To process a future batch of 50 named-person rows after checking `npm run stats` and confirming the send:
+
+```bash
+npm run send -- --live --cap 50 --daily-cap 50 --template T1_NAMED_PERSON
+```
+
+### Shared resumes by category
+
+The PDFs in the project's `resume/` folder are mapped in `attachment-categories.json`:
+
+| Excel category | Resume file |
+| --- | --- |
+| `frontend development` | `resume/mahendra_resumeA.pdf` |
+| `software developer` | `resume/mahendra_resumeB.pdf` |
+| `android developer` | `resume/mahendra_resumeC.pdf` |
+| `freelancing work` | `resume/mahendra_resumeD.pdf` |
+| `ai developer` | `resume/mahendra_resumeE.pdf` |
+
+To replace a resume, update the PDF with the same filename, or change its path in `attachment-categories.json`. Relative paths in that file resolve from the project folder; absolute paths can point to another folder. To include multiple files for a category, separate their paths with semicolons.
+
+In `Active_Queue`, enter one of the category names in the new `category` column; matching ignores case. Every row in that category uses the configured resume. To use a different file for one recipient, fill its `attachment` cell: it overrides the category. Leave both blank for no attachment. An unknown category, an empty category path, or a missing file produces an error and skips that row. Preview displays the chosen attachment before sending.
+
+### Example JSON format for future use
+
+See `examples/emails.sample.json` for a sample containing an `emails` array. Each entry has a recipient email, category, subject, greeting, an ordered `paragraphs` array, closing, and the resume filename and project-relative path. The example recipient and message are fictional. Keep passwords and app passwords in `.env`, never in the JSON file.
+
+A future JSON sender could loop over `emails`, combine nonempty greeting, paragraphs, and closing with blank lines, resolve the attachment path from the project folder, validate the address and file, and then send using the authenticated account selected when running the sender. The attachment path in an entry would be the source of truth for that email; the category is descriptive unless a future implementation explicitly adds category lookup. Validate account selection, reply address, subject, and file before sending, and retain the existing preview, caps, and sent-log behavior.
+
+The sender also supports the simpler JSON format described below; this older nested example is for reference only.
+
+The combined example file at `excel/email_json/emails.json` keeps all email entries in a single `emails` array. Each entry includes the recipient's name and email, category, subject, message paragraphs, and a `resume` path relative to the project folder. Copy an entry inside the array to add another recipient. The names, email addresses, and companies in this file are examples; replace them before use. The resume PDFs themselves remain in `resume/`. The sender can read this format using the `--json` option.
+
+
+### Send a reviewed JSON queue
+
+1. Review `excel/upcoming_json/master-first-50.json`. The source marks some contacts for review or skipping; these have `manual_skip: true`. Verify Gmail history and the chosen resume before enabling any contact.
+2. Put the approved JSON file in `excel/email_json/`. Remove or move the existing fictional example file first, or it will also be included. Every `.json` file in the folder is loaded in filename order. Paths in `resume` are relative to the project folder (or can be absolute).
+3. Preview and check counts:
+
+```bash
+npm run stats -- --json excel/email_json
+npm run preview -- --json excel/email_json --count 50
+```
+
+After reviewing and confirming the batch, use `npm run send -- --json excel/email_json --live --cap 50 --daily-cap 50 --template T1_NAMED_PERSON`. The sender retains its per-account sent log, delay, daily cap, proof copy, and dry-run default. It skips disabled, previously sent, and duplicate addresses. Check the send summary for row errors.
+
+The new 773-contact campaign starts with fresh per-account sent logs. Earlier logs are preserved in `archive/send-history-2026-11-16-fresh-start/`; new successful sends are recorded in newly created logs to prevent repeats within this campaign. The prepared first 50 retain the source workbook's Review and Skip flags until reviewed.

@@ -8,7 +8,7 @@ Copy this entire block into a file called `BUILD_PROMPT.md` in an empty director
 # Build: Cold Email Outreach Automation Tool
 
 You are building a production-ready Node.js CLI tool for sending personalized cold emails from a personal Gmail account, reading from a structured Excel file. This is a real job-hunt outreach system for me (Mahendra Singh Puniya, Senior Frontend Developer). It must be reliable, safe, and resumable.
-
+  
 ## Critical Context
 
 - **Input file:** `email_outreach_list.xlsx` (will be placed in project root by user)

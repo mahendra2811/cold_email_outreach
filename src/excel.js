@@ -62,12 +62,6 @@ export function loadTemplates(filePath) {
     out[id] = m ? m[2].trim() : body.trim();
   }
 
-  if (!out[TEMPLATE_T1] || !out[TEMPLATE_T2]) {
-    const missing = [TEMPLATE_T1, TEMPLATE_T2].filter((k) => !out[k]);
-    throw new Error(
-      `Templates sheet missing required template(s): ${missing.join(', ')}`,
-    );
-  }
 
   return /** @type {any} */ (out);
 }
@@ -89,11 +83,19 @@ export function loadQueue(filePath) {
   const out = [];
 
   rows.forEach((r, i) => {
+    const messageParts = ['greeting', 'paragraph_1', 'paragraph_2', 'paragraph_3', 'paragraph_4', 'paragraph_5', 'closing']
+      .map(key => String(r[key] || '').trim()).filter(Boolean);
     out.push({
       email: String(r.email || '').trim(),
-      template_id: String(r.template_id || '').trim(),
+      template_id: String(r.template_id || (r.body || messageParts.length ? TEMPLATE_T1 : '')).trim(),
       template_variables: String(r.template_variables || '').trim(),
-      suggested_subject: String(r.suggested_subject || '').trim(),
+      suggested_subject: String(r.subject || r.suggested_subject || '').trim(),
+      body: String(r.body || '').trim(),
+      messageParts,
+      title: String(r.title || '').trim(),
+      reply_to: String(r.reply_to || '').trim(),
+      attachment: String(r.attachment || '').trim(),
+      category: String(r.category || '').trim(),
       person_full_name: String(r.person_full_name || '').trim(),
       company_guess: String(r.company_guess || '').trim(),
       manual_skip: String(r.manual_skip || '').trim(),

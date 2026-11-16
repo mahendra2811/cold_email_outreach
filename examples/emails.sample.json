@@ -1,0 +1,48 @@
+{
+  "emails": [
+    {
+      "recipient": {
+        "email": "asha.sharma@example.com",
+        "name": "Asha Sharma"
+      },
+      "category": "frontend development",
+      "subject": "Frontend Developer Opportunities at Example Technologies",
+      "body": {
+        "greeting": "Hello Asha,",
+        "paragraphs": [
+          "I’m reaching out to express my interest in frontend developer opportunities at Example Technologies.",
+          "I enjoy building responsive and accessible web applications and would welcome the opportunity to contribute to your team.",
+          "I’ve attached my resume for your review. I’d be glad to share more about my experience and discuss any suitable openings.",
+          "Please let me know if there’s a convenient time to connect."
+        ],
+        "closing": "Thank you for your time and consideration.\n\nBest regards,\nMahendra Singh Puniya"
+      },
+      "attachment": {
+        "filename": "mahendra_resumeA.pdf",
+        "path": "resume/mahendra_resumeA.pdf"
+      }
+    },
+    {
+      "recipient": {
+        "email": "rohan.mehta@example.com",
+        "name": "Rohan Mehta"
+      },
+      "category": "android developer",
+      "subject": "Android Developer Opportunities at Example Mobile",
+      "body": {
+        "greeting": "Hello Rohan,",
+        "paragraphs": [
+          "I’m reaching out to express my interest in Android developer opportunities at Example Mobile.",
+          "I enjoy building mobile applications that are useful and easy to use, and I would welcome the opportunity to contribute to your team.",
+          "I’ve attached my resume for your review and would be glad to discuss my experience and any suitable openings.",
+          "Please let me know if there’s a convenient time to connect."
+        ],
+        "closing": "Thank you for your time and consideration.\n\nBest regards,\nMahendra Singh Puniya"
+      },
+      "attachment": {
+        "filename": "mahendra_resumeC.pdf",
+        "path": "resume/mahendra_resumeC.pdf"
+      }
+    }
+  ]
+}

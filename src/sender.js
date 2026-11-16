@@ -39,12 +39,14 @@ export function createSender(cfg, { dryRun }) {
   const transport = createTransport(cfg);
   const fromHeader = `"${cfg.fromName}" <${cfg.gmailUser}>`;
 
-  return async ({ to, subject, text }) => {
+  return async ({ to, subject, text, replyTo, attachments }) => {
     const info = await transport.sendMail({
       from: fromHeader,
       to,
       subject,
       text,
+      replyTo,
+      attachments,
     });
     return { messageId: info.messageId, dryRun: false };
   };
