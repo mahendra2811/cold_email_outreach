@@ -83,3 +83,20 @@ export function countSentToday(logPath, now = new Date()) {
   }
   return count;
 }
+
+/** Load all numbered account logs for a campaign, including the base log. */
+export function loadCampaignSentSet(basePath) {
+  const absolute = path.resolve(basePath);
+  const directory = path.dirname(absolute);
+  const baseName = path.basename(absolute);
+  const extension = path.extname(baseName);
+  const stem = baseName.slice(0, baseName.length - extension.length).replace(/\.\d+$/, '');
+  const escapeRegex = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const pattern = new RegExp(`^${escapeRegex(stem)}\\.\\d+${escapeRegex(extension)}$`);
+  const result = loadSentSet(path.join(directory, stem + extension));
+  if (!fs.existsSync(directory)) return result;
+  for (const name of fs.readdirSync(directory)) {
+    if (pattern.test(name)) for (const email of loadSentSet(path.join(directory, name))) result.add(email);
+  }
+  return result;
+}

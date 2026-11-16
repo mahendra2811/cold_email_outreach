@@ -222,28 +222,6 @@ To replace a resume, update the PDF with the same filename, or change its path i
 
 In `Active_Queue`, enter one of the category names in the new `category` column; matching ignores case. Every row in that category uses the configured resume. To use a different file for one recipient, fill its `attachment` cell: it overrides the category. Leave both blank for no attachment. An unknown category, an empty category path, or a missing file produces an error and skips that row. Preview displays the chosen attachment before sending.
 
-### Example JSON format for future use
+### JSON campaign queue
 
-See `examples/emails.sample.json` for a sample containing an `emails` array. Each entry has a recipient email, category, subject, greeting, an ordered `paragraphs` array, closing, and the resume filename and project-relative path. The example recipient and message are fictional. Keep passwords and app passwords in `.env`, never in the JSON file.
-
-A future JSON sender could loop over `emails`, combine nonempty greeting, paragraphs, and closing with blank lines, resolve the attachment path from the project folder, validate the address and file, and then send using the authenticated account selected when running the sender. The attachment path in an entry would be the source of truth for that email; the category is descriptive unless a future implementation explicitly adds category lookup. Validate account selection, reply address, subject, and file before sending, and retain the existing preview, caps, and sent-log behavior.
-
-The sender also supports the simpler JSON format described below; this older nested example is for reference only.
-
-The combined example file at `excel/email_json/emails.json` keeps all email entries in a single `emails` array. Each entry includes the recipient's name and email, category, subject, message paragraphs, and a `resume` path relative to the project folder. Copy an entry inside the array to add another recipient. The names, email addresses, and companies in this file are examples; replace them before use. The resume PDFs themselves remain in `resume/`. The sender can read this format using the `--json` option.
-
-
-### Send a reviewed JSON queue
-
-1. Review `excel/upcoming_json/master-first-50.json`. The source marks some contacts for review or skipping; these have `manual_skip: true`. Verify Gmail history and the chosen resume before enabling any contact.
-2. Put the approved JSON file in `excel/email_json/`. Remove or move the existing fictional example file first, or it will also be included. Every `.json` file in the folder is loaded in filename order. Paths in `resume` are relative to the project folder (or can be absolute).
-3. Preview and check counts:
-
-```bash
-npm run stats -- --json excel/email_json
-npm run preview -- --json excel/email_json --count 50
-```
-
-After reviewing and confirming the batch, use `npm run send -- --json excel/email_json --live --cap 50 --daily-cap 50 --template T1_NAMED_PERSON`. The sender retains its per-account sent log, delay, daily cap, proof copy, and dry-run default. It skips disabled, previously sent, and duplicate addresses. Check the send summary for row errors.
-
-The new 773-contact campaign starts with fresh per-account sent logs. Earlier logs are preserved in `archive/send-history-2026-11-16-fresh-start/`; new successful sends are recorded in newly created logs to prevent repeats within this campaign. The prepared first 50 retain the source workbook's Review and Skip flags until reviewed.
+The active combined queue is `data/email_json/emails.json`. For the current commands, sent markers, cross-account history, limits, and review workflow, see [SEND_EMAILS.md](SEND_EMAILS.md) and [data/README.md](data/README.md). The original batches are retained in `data/upcoming_json/`.

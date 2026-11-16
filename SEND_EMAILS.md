@@ -6,7 +6,7 @@ Run these commands from the project folder:
 cd /Users/pooniya0092/Documents/p_project/ColdOutrichAutoEmail
 ```
 
-The shortcuts read every `.json` file in `data/email_json/`. Put only reviewed batches there. Move out the fictional `emails.json` example before placing a real batch in the folder. Files in `data/upcoming_json/` are for review and are not sent unless moved or copied into `data/email_json/`.
+The shortcuts read every `.json` file in `data/email_json/`. The active `emails.json` contains the combined 773-contact queue. Review the contacts, messages and resumes before sending. Files in `data/upcoming_json/` are preserved source batches; do not put copies alongside the combined queue.
 
 ## 1. Check the queue
 
@@ -17,7 +17,7 @@ npm run mail:preview -- --count 50
 
 Stats shows total rows, already sent, manually skipped, and ready. Preview displays each ready recipient's subject, full message, reply address, and attachment. Increase `--count` to review more entries. Stats does not check every attachment; use preview too.
 
-These commands check `sent.log` for account 0. For account 1, add `--sent-log sent.1.log`; for account 2, use `--sent-log sent.2.log`. Review both accounts' logs before switching accounts: a single-account send only checks that account's log.
+Stats and preview check the `sent` markers in the JSON and all campaign account logs (`sent.log`, `sent.1.log`, `sent.2.log`, etc.). Daily limits are still counted separately for each account.
 
 ## 2. Send a proof copy only
 
@@ -63,7 +63,7 @@ Add the appropriate credentials to `.env` before using an account; never put pas
 npm run mail:send -- --live --account 1 --cap 50 --daily-cap 50
 ```
 
-`--rotate` currently rotates between accounts 0 and 1 only; it is not a three-account rotation. For ordinary single-account runs, the sender checks only the selected account's log. Preserve logs to prevent repeat sends and keep daily counts accurate. Previous campaign logs are archived in `archive/send-history-2026-11-16-fresh-start/` and are not used by default.
+`--rotate` currently rotates between accounts 0 and 1 only; it is not a three-account rotation. All runs check every account log and the JSON sent markers to prevent repeats across accounts. Preserve logs to prevent repeat sends and keep daily counts accurate. Previous campaign logs are archived in `archive/send-history-2026-11-16-fresh-start/` and are not used by default.
 
 ## Change timing
 
@@ -77,7 +77,7 @@ That example waits between 60 and 80 seconds between emails. With default pacing
 
 ## Prepare and review new batches
 
-The source is `data/upcoming/master_email_list.xlsx`, on the **Master Contacts** sheet. The first 50 are in `data/upcoming_json/master-first-50.json`; the 10 source rows marked Review or Skip have `manual_skip: true`. Review Gmail history, content, addresses and resume selection before making a batch active. `manual_skip: true` excludes an entry; change it to the JSON boolean `false` only after review. The remaining contacts are prepared as files `master-050-100.json` through `master-750-773.json` in `data/upcoming_json/`. Each file needs review before activation; there is no command to automatically rebuild batches from an updated master workbook.
+The source is `data/upcoming/master_email_list.xlsx`, on the **Master Contacts** sheet. The first 50 are in `data/upcoming_json/ok_master-000-050.json`; the 10 source rows marked Review or Skip have `manual_skip: true`. Review Gmail history, content, addresses and resume selection before making a batch active. `manual_skip: true` excludes an entry; change it to the JSON boolean `false` only after review. The remaining contacts are prepared as files `master-050-100.json` through `master-750-773.json` in `data/upcoming_json/`. Each file needs review before activation; there is no command to automatically rebuild batches from an updated master workbook.
 
 For the JSON format, resume mapping, troubleshooting, and full data flow, see [data/README.md](data/README.md).
 
@@ -104,4 +104,29 @@ After the batch is reviewed and confirmed, send up to 50 from account 1:
 npm run mail:send -- --json data/upcoming_json/master-050-100.json --account 1 --live --cap 50 --daily-cap 50
 ```
 
-For another batch, change the filename. For the first or third configured account, change the account to `0` or `2`, and use `sent.log` or `sent.2.log` for its stats and preview. Each account has a separate sent log; single-account runs do not consult the other logs, so check the other account's history before switching to avoid sending the same address twice. Disabled rows are still skipped, so a 50-row file can send fewer than 50 emails.
+For another batch, change the filename. For the first or third configured account, change the account to `0` or `2`, and use `sent.log` or `sent.2.log` for its stats and preview. Each account has a separate daily-limit log, but all account logs are consulted for duplicate prevention. Disabled rows are still skipped, so a 50-row file can send fewer than 50 emails.
+
+
+## Combined queue and resuming
+
+`data/email_json/emails.json` contains all 773 contacts. After Gmail accepts an email, the sender appends the recipient to the selected account's log and atomically updates that JSON entry with `sent: true`, `sent_at`, and `sent_account`. The next run skips it, including when a different account is selected. The `sent` marker means SMTP accepted the message; it does not confirm delivery. Preserve the JSON and all account logs. The ten review/skip rows in the first 50, and equivalent flags in other batches, remain disabled until you review them. Failed attempts remain unmarked and eligible for a later run; errors are shown in the terminal rather than kept in a persistent failure log.
+
+Do not run two send processes simultaneously or edit the queue during a run. If the program closes after Gmail accepts an email but before it records the result, delivery can be uncertain; check Gmail Sent before retrying. If saving a successful result fails, the script stops and tells you to check Gmail and the logs.
+
+## Start a new campaign from scratch
+
+Stop all send processes first. Preview what will be reset:
+
+```bash
+npm run mail:reset
+```
+
+When you intend to start a new campaign and allow previously contacted addresses to become eligible again, run:
+
+```bash
+npm run mail:reset -- --confirm-reset
+```
+
+The reset backs up every JSON file in `data/email_json/` and all `sent.log`, `sent.1.log`, etc. files into a new folder under `archive/campaign-resets/`. It clears `sent`, `sent_at`, and `sent_account` in the active JSON files and removes the active account logs. Recipient content and `manual_skip` review flags stay unchanged. Original source batches under `data/upcoming_json/` are not modified. You can then update the active list and run `npm run mail:stats` and `npm run mail:preview`.
+
+**Daily limits reset too:** the daily count comes from the archived logs. If you reset during a day when you already sent mail, account for those messages when setting `--daily-cap`. A reset makes previously sent addresses eligible again; it does not undo or delete emails from Gmail. Do not reset while a send is running. If interrupted during a reset, inspect the backup folder and queue/log files before sending.

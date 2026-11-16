@@ -13,7 +13,7 @@ import {
   loadAccountCredentials,
 } from './config.js';
 import { loadQueue, loadTemplates } from './excel.js';
-import { loadJsonQueue } from './jsonQueue.js';
+import { loadJsonQueue, markJsonSent } from './jsonQueue.js';
 import {
   applyFallbacks,
   fillSubject,
@@ -21,7 +21,7 @@ import {
   parseTemplateVariables,
 } from './template.js';
 import { createSender } from './sender.js';
-import { appendSent, countSent, countSentToday, loadSentSet } from './sentLog.js';
+import { appendSent, countSent, countSentToday, loadCampaignSentSet } from './sentLog.js';
 import { computeDelaySeconds, sleep } from './throttle.js';
 import * as log from './logger.js';
 
@@ -130,12 +130,12 @@ function filterQueue(queue, sentSet, templateFilter) {
       skipped.noEmail++;
       continue;
     }
-    if (row.manual_skip) {
-      skipped.manualSkip++;
+    if (row.sent || sentSet.has(row.email.toLowerCase())) {
+      skipped.alreadySent++;
       continue;
     }
-    if (sentSet.has(row.email.toLowerCase())) {
-      skipped.alreadySent++;
+    if (row.manual_skip) {
+      skipped.manualSkip++;
       continue;
     }
     if (!VALID_TEMPLATE_IDS.has(row.template_id)) {
@@ -240,11 +240,8 @@ async function runSend(opts) {
   if (!Number.isFinite(baseDelay) || baseDelay < 0) throw new Error('--delay must be >= 0');
   if (!Number.isFinite(jitter) || jitter < 0) throw new Error('--jitter must be >= 0');
 
-  // Build combined sent set from all active accounts (dedup across accounts)
-  const combinedSentSet = new Set();
-  for (const n of accountList) {
-    for (const e of loadSentSet(sentLogForAccount(opts.sentLog, n))) combinedSentSet.add(e);
-  }
+  // Deduplicate across every account in this campaign, including earlier runs.
+  const combinedSentSet = loadCampaignSentSet(opts.sentLog);
 
   const templates = opts.json ? {} : loadTemplates(opts.file);
   const queue = opts.json ? loadJsonQueue(opts.json) : loadQueue(opts.file);
@@ -356,8 +353,13 @@ async function runSend(opts) {
       }
 
       if (!dryRun) {
-        try { appendSent(acctSentLog, row.email); } catch (e) {
-          log.warn(`  (warning) failed to append to sent log for ${row.email}: ${e.message}`);
+        try {
+          appendSent(acctSentLog, row.email);
+          markJsonSent(row, acctIdx);
+        } catch (e) {
+          totalErrors++;
+          log.err(`  RECORD ERROR after SMTP accepted ${row.email}: ${e.message}. Stopping; check Gmail Sent and logs before resuming.`);
+          stopped.value = true;
         }
       }
       sentThisAcct++;
@@ -399,7 +401,7 @@ async function runPreview(opts) {
 
   const templates = opts.json ? {} : loadTemplates(opts.file);
   const queue = opts.json ? loadJsonQueue(opts.json) : loadQueue(opts.file);
-  const sentSet = loadSentSet(opts.sentLog);
+  const sentSet = loadCampaignSentSet(opts.sentLog);
   const { ready } = filterQueue(queue, sentSet, templateFilter);
 
   log.heading(`\nPreview — first ${Math.min(count, ready.length)} of ${ready.length} ready rows`);
@@ -434,7 +436,7 @@ async function runPreview(opts) {
 async function runStats(opts) {
   const templates = opts.json ? {} : loadTemplates(opts.file);
   const queue = opts.json ? loadJsonQueue(opts.json) : loadQueue(opts.file);
-  const sentSet = loadSentSet(opts.sentLog);
+  const sentSet = loadCampaignSentSet(opts.sentLog);
   const { ready, skipped } = filterQueue(queue, sentSet, undefined);
 
   const byTemplate = { [TEMPLATE_T1]: 0, [TEMPLATE_T2]: 0 };
@@ -453,7 +455,7 @@ async function runStats(opts) {
   log.raw(`  Ready to send:        ${ready.length}`);
   log.dim(`    ↳ ${TEMPLATE_T1}: ${byTemplate[TEMPLATE_T1]}`);
   log.dim(`    ↳ ${TEMPLATE_T2}: ${byTemplate[TEMPLATE_T2]}`);
-  log.raw(`  sent.log entries:     ${sentSet.size}  (file: ${opts.sentLog})`);
+  log.raw(`  Campaign log entries: ${sentSet.size}  (all account logs based on ${opts.sentLog})`);
 }
 
 /* ------------------------- main ------------------------- */

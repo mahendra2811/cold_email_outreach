@@ -19,6 +19,7 @@ export function loadJsonQueue(inputPath) {
       const str = value => typeof value === 'string' ? value.trim() : '';
       const resume = str(entry.resume);
       rows.push({
+        sourceFile: file, sourceIndex: i, sent: entry.sent === true,
         email: str(entry.email), person_full_name: str(entry.name), company_guess: str(entry.company),
         category: str(entry.category), suggested_subject: str(entry.subject), reply_to: str(entry.reply_to),
         attachment: resume ? path.resolve(process.cwd(), resume) : '',
@@ -28,4 +29,24 @@ export function loadJsonQueue(inputPath) {
     });
   }
   return rows;
+}
+
+/** Atomically record an SMTP-accepted recipient in its originating queue file. */
+export function markJsonSent(row, account, sentAt = new Date().toISOString()) {
+  if (!row.sourceFile) return;
+  const data = JSON.parse(fs.readFileSync(row.sourceFile, 'utf8'));
+  const entry = data.emails?.[row.sourceIndex];
+  if (!entry || String(entry.email || '').trim().toLowerCase() !== row.email.toLowerCase()) {
+    throw new Error('JSON queue changed during sending; cannot safely mark recipient');
+  }
+  entry.sent = true;
+  entry.sent_at = sentAt;
+  entry.sent_account = account;
+  const temp = `${row.sourceFile}.${process.pid}.tmp`;
+  try {
+    fs.writeFileSync(temp, JSON.stringify(data, null, 2) + '\n', { flag: 'wx' });
+    fs.renameSync(temp, row.sourceFile);
+  } finally {
+    if (fs.existsSync(temp)) fs.unlinkSync(temp);
+  }
 }
