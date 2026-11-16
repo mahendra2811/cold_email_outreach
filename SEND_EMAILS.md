@@ -25,7 +25,7 @@ Stats and preview check the `sent` markers in the JSON and all campaign account 
 npm run mail:proof -- --live
 ```
 
-This sends the **first ready email only** to `mahendrapuniya92@gmail.com`, with a `[PROOF]` subject prefix and its attachment. It does not send to the recipient or record the recipient as sent. The first account is used by default; append `--account 1` or `--account 2` to choose another configured account. The account must have capacity under its daily cap, although proof copies themselves are not counted in the sent log or daily recipient cap.
+This sends the **first ready email only** to `mahendrapuniya92@gmail.com`, with a `[PROOF]` subject prefix and its attachment. The proof body shows the actual sender account and name, first recipient and subject, ready count, maximum planned for that account, caps, delays, and an estimated waiting-time range. The estimate excludes sending, proof and error time, and actual results can differ. It does not send to the recipient or record the recipient as sent. The first account is used by default; append `--account 1` or `--account 2` to choose another configured account. The account must have capacity under its daily cap, although proof copies themselves are not counted in the sent log or daily recipient cap.
 
 Without `--live`, this command is a dry run and no proof email is sent. If no ready rows remain, there is no proof to send. To change the proof address, edit `proofEmail` in `src/config.js`. **That value is also the default Reply-To address** for rows that do not specify `reply_to`.
 

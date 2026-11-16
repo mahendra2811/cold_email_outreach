@@ -21,6 +21,7 @@ import {
   parseTemplateVariables,
 } from './template.js';
 import { createSender } from './sender.js';
+import { buildProofBody } from './proof.js';
 import { appendSent, countSent, countSentToday, loadCampaignSentSet } from './sentLog.js';
 import { computeDelaySeconds, sleep } from './throttle.js';
 import * as log from './logger.js';
@@ -303,7 +304,11 @@ async function runSend(opts) {
       try {
         proofRendered = renderRow(proofRow, templates, opts.file);
         const proofSubject = `[PROOF] ${proofRendered.subject}`;
-        const proofBody = `--- PROOF COPY (first recipient: ${proofRow.email}) ---\n\n${proofRendered.text}`;
+        const proofBody = buildProofBody({
+          row: proofRow, rendered: proofRendered, credentials: creds, account: acctIdx,
+          readyCount: ready.length - readyPointer, plannedCount: Math.min(acctCap, ready.length - readyPointer),
+          sentToday: sentTodayAcct, dailyCap, runCap: cap, delay: baseDelay, jitter, proofOnly: Boolean(opts.proofOnly),
+        });
         await send({ to: DEFAULTS.proofEmail, subject: proofSubject, text: proofBody, replyTo: proofRendered.replyTo, attachments: proofRendered.attachments });
         log.ok(`[PROOF] ${chalk.cyan(DEFAULTS.proofEmail)} — ${dryRun ? 'proof copy rendered (dry-run)' : 'proof copy sent before batch starts'}`);
       } catch (e) {

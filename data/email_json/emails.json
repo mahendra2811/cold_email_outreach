@@ -702,7 +702,9 @@
         "source_resume": "mahendra_resume.pdf",
         "resume_selection": "Selected by role bucket; verify before sending."
       },
-      "sent": false
+      "sent": true,
+      "sent_at": "2026-11-16T17:04:02.061Z",
+      "sent_account": 0
     },
     {
       "name": "Ambrscaleit",
@@ -758,7 +760,9 @@
         "source_resume": "mahendra_resume.pdf",
         "resume_selection": "Selected by role bucket; verify before sending."
       },
-      "sent": false
+      "sent": true,
+      "sent_at": "2026-11-16T17:04:58.534Z",
+      "sent_account": 0
     },
     {
       "name": "Amita",
@@ -786,7 +790,9 @@
         "source_resume": "mahendra_resume.pdf",
         "resume_selection": "Selected by role bucket; verify before sending."
       },
-      "sent": false
+      "sent": true,
+      "sent_at": "2026-11-16T17:05:53.582Z",
+      "sent_account": 0
     },
     {
       "name": "Hiring Team",
@@ -814,7 +820,9 @@
         "source_resume": "mahendra_resume.pdf",
         "resume_selection": "Selected by role bucket; verify before sending."
       },
-      "sent": false
+      "sent": true,
+      "sent_at": "2026-11-16T17:06:54.098Z",
+      "sent_account": 0
     },
     {
       "name": "Amrita",
@@ -870,7 +878,9 @@
         "source_resume": "mahendra_resume.pdf",
         "resume_selection": "Selected by role bucket; verify before sending."
       },
-      "sent": false
+      "sent": true,
+      "sent_at": "2026-11-16T17:07:49.702Z",
+      "sent_account": 0
     },
     {
       "name": "Anihchbc",
@@ -926,7 +936,9 @@
         "source_resume": "mahendra_resume.pdf",
         "resume_selection": "Selected by role bucket; verify before sending."
       },
-      "sent": false
+      "sent": true,
+      "sent_at": "2026-11-16T17:08:42.233Z",
+      "sent_account": 0
     },
     {
       "name": "Anita Lenka",
@@ -954,7 +966,9 @@
         "source_resume": "mahendra_resume.pdf",
         "resume_selection": "Selected by role bucket; verify before sending."
       },
-      "sent": false
+      "sent": true,
+      "sent_at": "2026-11-16T17:09:35.605Z",
+      "sent_account": 0
     },
     {
       "name": "Hiring Team",
@@ -982,7 +996,9 @@
         "source_resume": "mahendra_resume.pdf",
         "resume_selection": "Selected by role bucket; verify before sending."
       },
-      "sent": false
+      "sent": true,
+      "sent_at": "2026-11-16T17:10:37.123Z",
+      "sent_account": 0
     },
     {
       "name": "Hiring Team",
@@ -1010,7 +1026,9 @@
         "source_resume": "mahendra_resume.pdf",
         "resume_selection": "Selected by role bucket; verify before sending."
       },
-      "sent": false
+      "sent": true,
+      "sent_at": "2026-11-16T17:11:29.963Z",
+      "sent_account": 0
     },
     {
       "name": "Ankita",
@@ -1038,7 +1056,9 @@
         "source_resume": "mahendra_resume.pdf",
         "resume_selection": "Selected by role bucket; verify before sending."
       },
-      "sent": false
+      "sent": true,
+      "sent_at": "2026-11-16T17:12:32.262Z",
+      "sent_account": 0
     },
     {
       "name": "Ankita",
