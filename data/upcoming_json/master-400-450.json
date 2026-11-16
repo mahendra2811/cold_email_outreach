@@ -1,0 +1,1342 @@
+{
+  "emails": [
+    {
+      "name": "Hiring Team",
+      "email": "info@devaveglobal.com",
+      "company": "devaveglobal.com",
+      "category": "frontend development",
+      "subject": "Software Developer Opportunities at devaveglobal.com | Resume Attached",
+      "message": [
+        "Hello,",
+        "I'm Mahendra, a software engineer with nearly 2 years of experience working on real-world web products.",
+        "I would appreciate being considered for relevant software development work at devaveglobal.com. My recent work includes responsive React interfaces, API integrations and performance improvements on live applications.",
+        "An opportunity to introduce my work to the hiring team would mean a lot to me. Thank you for considering my profile.",
+        "My latest resume is attached, and my portfolio is linked below. Thank you for your time.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0401",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@domistech.com",
+      "company": "Domistech",
+      "category": "frontend development",
+      "subject": "Resume – Software Developer Opportunities at Domistech",
+      "message": [
+        "Hello,",
+        "I'm Mahendra Singh Puniya, and I've spent nearly 2 years developing and shipping software for live products.",
+        "I'd like to share my profile for any suitable Software Developer opportunities involving React.js or Next.js at Domistech. I’ve worked on high-traffic web products and helped improve Lighthouse scores from 65 to 90 while reducing LCP by around 40%.",
+        "I would be grateful if you could review my profile or point me toward an appropriate software engineering opportunity.",
+        "I appreciate your time and consideration. You can find my recent work in the attached resume and linked portfolio.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0402",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@dsignzmedia.com",
+      "company": "dsignzmedia.com",
+      "category": "frontend development",
+      "subject": "Resume – Software Developer Opportunities at dsignzmedia.com",
+      "message": [
+        "Hello,",
+        "I'm Mahendra, currently exploring the next step in my software engineering career after nearly 2 years of production experience.",
+        "I'm reaching out to learn about possible Software Developer opportunities involving React.js or Next.js at dsignzmedia.com. My hands-on experience covers React.js, Next.js, JavaScript, TypeScript and taking customer-facing features through production release.",
+        "I'd value the opportunity to discuss a relevant position and would appreciate any guidance on the application process.",
+        "I've included my resume and portfolio for your review. Thank you for taking a look.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0403",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@dunloughcontracts.com",
+      "company": "dunloughcontracts.com",
+      "category": "frontend development",
+      "subject": "Application Inquiry – Software Developer (React / Next.js) | dunloughcontracts.com",
+      "message": [
+        "Hello,",
+        "I'm Mahendra, a Software Developer with nearly 2 years of experience building production web applications.",
+        "I would appreciate being considered for relevant software development work at dunloughcontracts.com. I enjoy building reusable components, integrating APIs and improving the speed and usability of real-world web applications.",
+        "I would appreciate the chance to have my resume considered for a suitable role, or to be directed to the right person on your team.",
+        "I appreciate your time and consideration. You can find my recent work in the attached resume and linked portfolio.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": true,
+      "review": {
+        "lead_id": "M-0404",
+        "source_decision": "Review",
+        "next_action": "Verify company, role and email before drafting",
+        "reason": "SP1: Source thread is service/freelance outreach, not a standard job application",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@emertech.io",
+      "company": "Emertech",
+      "category": "software developer",
+      "subject": "Application Inquiry – Software Developer (React / Next.js) | Emertech",
+      "message": [
+        "Hello,",
+        "I'm Mahendra, currently exploring the next step in my software engineering career after nearly 2 years of production experience.",
+        "I'm writing to express interest in Full Stack Developer or Software Developer opportunities at Emertech. I work across React.js, Next.js, TypeScript, Node.js, REST APIs and PostgreSQL/MongoDB to deliver end-to-end features.",
+        "An opportunity to introduce my work to the hiring team would mean a lot to me. Thank you for considering my profile.",
+        "I've included my resume and portfolio for your review. Thank you for taking a look.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeB.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0405",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft or sent email",
+        "reason": "SP1: Relevant engineering/recruiting contact | SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach; Additional contact at same company — stagger outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@enovanto.com",
+      "company": "enovanto.com",
+      "category": "software developer",
+      "subject": "Software Developer Opportunities at enovanto.com | Resume Attached",
+      "message": [
+        "Hello,",
+        "My name is Mahendra Singh Puniya. I have nearly 2 years of hands-on experience in software development.",
+        "I would appreciate being considered for relevant software development work at enovanto.com. My experience includes building web interfaces, integrating backend services and working with databases in production environments.",
+        "I'd value the opportunity to discuss a relevant position and would appreciate any guidance on the application process.",
+        "I've included my resume and portfolio for your review. Thank you for taking a look.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeB.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0406",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@goodjob-production.com",
+      "company": "goodjob-production.com",
+      "category": "frontend development",
+      "subject": "Resume – Software Developer Opportunities at goodjob-production.com",
+      "message": [
+        "Hello,",
+        "My name is Mahendra Singh Puniya. I have nearly 2 years of hands-on experience in software development.",
+        "I'd like to share my profile for any suitable Software Developer opportunities involving React.js or Next.js at goodjob-production.com. My hands-on experience covers React.js, Next.js, JavaScript, TypeScript and taking customer-facing features through production release.",
+        "An opportunity to introduce my work to the hiring team would mean a lot to me. Thank you for considering my profile.",
+        "I appreciate your time and consideration. You can find my recent work in the attached resume and linked portfolio.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0407",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@harmoviajobs.com",
+      "company": "Harmoviajobs",
+      "category": "frontend development",
+      "subject": "DO NOT SEND — excluded contact",
+      "message": [
+        "This contact is excluded from outreach.\nReason: SP1: Relevant engineering/recruiting contact | SP2: Role mismatch (Angular/design)"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": true,
+      "review": {
+        "lead_id": "M-0408",
+        "source_decision": "Skip",
+        "next_action": "Do not contact",
+        "reason": "SP1: Relevant engineering/recruiting contact | SP2: Role mismatch (Angular/design)",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@hxbindia.com",
+      "company": "Hxbindia",
+      "category": "frontend development",
+      "subject": "Application Inquiry – Software Developer (React / Next.js) | Hxbindia",
+      "message": [
+        "Hello,",
+        "I'm Mahendra, a software engineer with nearly 2 years of experience working on real-world web products.",
+        "I'd like to share my profile for any suitable Software Developer opportunities involving React.js or Next.js at Hxbindia. I’ve contributed to production e-commerce applications, balancing maintainable React/Next.js code with performance and delivery.",
+        "Please feel free to review my attached resume and portfolio; I'd be glad to share more details about my work.",
+        "Please find my resume attached. I'd be happy to provide any additional information.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0409",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@inauticalsoftware.com",
+      "company": "inauticalsoftware.com",
+      "category": "frontend development",
+      "subject": "Application Inquiry – Software Developer (React / Next.js) | inauticalsoftware.com",
+      "message": [
+        "Hello,",
+        "My name is Mahendra Singh Puniya. I have nearly 2 years of hands-on experience in software development.",
+        "I'm writing to express interest in Software Developer opportunities involving React.js or Next.js at inauticalsoftware.com. My recent work includes responsive React interfaces, API integrations and performance improvements on live applications.",
+        "I would appreciate the chance to have my resume considered for a suitable role, or to be directed to the right person on your team.",
+        "Please find my resume attached. I'd be happy to provide any additional information.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0410",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@infiniqemarketing.com",
+      "company": "infiniqemarketing.com",
+      "category": "frontend development",
+      "subject": "Commerce Software Developer Opportunities at infiniqemarketing.com | Resume",
+      "message": [
+        "Hello,",
+        "I'm Mahendra, a software engineer with nearly 2 years of experience working on real-world web products.",
+        "I wanted to share my profile for suitable Software Developer opportunities at infiniqemarketing.com. I’ve built and optimized production shopping experiences across Next.js, TypeScript, tracking integrations and reusable UI.",
+        "I would appreciate the chance to have my resume considered for a suitable role, or to be directed to the right person on your team.",
+        "Please find my resume attached. I'd be happy to provide any additional information.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0411",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@knovosis.com",
+      "company": "Knovosis",
+      "category": "frontend development",
+      "subject": "Software Developer / SDE-1 – Application Inquiry | Knovosis",
+      "message": [
+        "Hello,",
+        "My name is Mahendra Singh Puniya. I have nearly 2 years of hands-on experience in software development.",
+        "I'm reaching out to learn about possible Software Developer opportunities involving React.js or Next.js at Knovosis. My hands-on experience covers React.js, Next.js, JavaScript, TypeScript and taking customer-facing features through production release.",
+        "I would appreciate the chance to have my resume considered for a suitable role, or to be directed to the right person on your team.",
+        "I've attached my resume for reference and included my portfolio to make it easy to explore my work.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": true,
+      "review": {
+        "lead_id": "M-0412",
+        "source_decision": "Review",
+        "next_action": "Verify company, role and email before drafting",
+        "reason": "SP1: Relevant engineering/recruiting contact | SP2: Only a follow-up/reply in source; verify context before new introduction",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@manifestinfotech.com",
+      "company": "Manifestinfotech",
+      "category": "frontend development",
+      "subject": "Software Developer Opportunities at Manifestinfotech | Resume Attached",
+      "message": [
+        "Hello,",
+        "I'm Mahendra Singh Puniya, a Software Developer with nearly 2 years of professional experience.",
+        "I'm writing to express interest in Software Developer opportunities involving React.js or Next.js at Manifestinfotech. I enjoy building reusable components, integrating APIs and improving the speed and usability of real-world web applications.",
+        "I would appreciate the chance to have my resume considered for a suitable role, or to be directed to the right person on your team.",
+        "Thank you for considering my background. My resume is attached, with project details available through my portfolio.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0413",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact | SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@matchigo.in",
+      "company": "Matchigo",
+      "category": "software developer",
+      "subject": "Resume – Software Developer Opportunities at Matchigo",
+      "message": [
+        "Hello,",
+        "I'm Mahendra, a Software Developer with nearly 2 years of experience building production web applications.",
+        "I would appreciate being considered for relevant software development work at Matchigo. I work across React.js, Next.js, TypeScript, Node.js, REST APIs and PostgreSQL/MongoDB to deliver end-to-end features.",
+        "I would be grateful if you could review my profile or point me toward an appropriate software engineering opportunity.",
+        "I've included my resume and portfolio for your review. Thank you for taking a look.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeB.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0414",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@micropillartech.com",
+      "company": "micropillartech.com",
+      "category": "software developer",
+      "subject": "Software Developer / SDE-1 – Application Inquiry | micropillartech.com",
+      "message": [
+        "Hello,",
+        "I'm Mahendra, a Software Developer with nearly 2 years of experience building production web applications.",
+        "I'm reaching out to learn about possible Software Developer or SDE-1 opportunities at micropillartech.com. I’ve contributed to customer-facing products through feature development, API integration, testing and production releases.",
+        "I would appreciate the chance to have my resume considered for a suitable role, or to be directed to the right person on your team.",
+        "I appreciate your time and consideration. You can find my recent work in the attached resume and linked portfolio.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeB.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0415",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@prismberry.com",
+      "company": "prismberry.com",
+      "category": "frontend development",
+      "subject": "Software Developer / SDE-1 – Application Inquiry | prismberry.com",
+      "message": [
+        "Hello,",
+        "My name is Mahendra Singh Puniya. I have nearly 2 years of hands-on experience in software development.",
+        "I'd like to share my profile for any suitable Software Developer opportunities involving React.js or Next.js at prismberry.com. I’ve worked on high-traffic web products and helped improve Lighthouse scores from 65 to 90 while reducing LCP by around 40%.",
+        "An opportunity to introduce my work to the hiring team would mean a lot to me. Thank you for considering my profile.",
+        "I've included my resume and portfolio for your review. Thank you for taking a look.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0416",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@quantela.com",
+      "company": "Quantela",
+      "category": "frontend development",
+      "subject": "Resume – Software Developer Opportunities at Quantela",
+      "message": [
+        "Hello,",
+        "I'm Mahendra, currently exploring the next step in my software engineering career after nearly 2 years of production experience.",
+        "I'm reaching out to learn about possible Software Developer opportunities involving React.js or Next.js at Quantela. My hands-on experience covers React.js, Next.js, JavaScript, TypeScript and taking customer-facing features through production release.",
+        "I would appreciate the chance to have my resume considered for a suitable role, or to be directed to the right person on your team.",
+        "My latest resume is attached, and my portfolio is linked below. Thank you for your time.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0417",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@rodentsec.com",
+      "company": "Rodentsec",
+      "category": "frontend development",
+      "subject": "Software Developer – E-commerce & Next.js | Rodentsec",
+      "message": [
+        "Hello,",
+        "I'm Mahendra Singh Puniya, a Software Developer with nearly 2 years of professional experience.",
+        "I'm interested in the opportunity to contribute my React/Next.js and commerce experience at Rodentsec. My work includes Storefront Builder and production shopping experiences, with a focus on performance and maintainability.",
+        "An opportunity to introduce my work to the hiring team would mean a lot to me. Thank you for considering my profile.",
+        "I've included my resume and portfolio for your review. Thank you for taking a look.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": true,
+      "review": {
+        "lead_id": "M-0418",
+        "source_decision": "Review",
+        "next_action": "Verify company, role and email before drafting",
+        "reason": "SP1: Part-time/freelance/contract context | SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@secureaxislabs.com",
+      "company": "Secureaxislabs",
+      "category": "frontend development",
+      "subject": "Commerce Software Developer Opportunities at Secureaxislabs | Resume",
+      "message": [
+        "Hello,",
+        "I'm Mahendra Singh Puniya, and I've spent nearly 2 years developing and shipping software for live products.",
+        "I'm interested in the opportunity to contribute my React/Next.js and commerce experience at Secureaxislabs. My work includes Storefront Builder and production shopping experiences, with a focus on performance and maintainability.",
+        "An opportunity to introduce my work to the hiring team would mean a lot to me. Thank you for considering my profile.",
+        "I've included my resume and portfolio for your review. Thank you for taking a look.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0419",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact | SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@srd.exchange",
+      "company": "srd.exchange",
+      "category": "frontend development",
+      "subject": "Resume – Software Developer Opportunities at srd.exchange",
+      "message": [
+        "Hello,",
+        "My name is Mahendra Singh Puniya. I have nearly 2 years of hands-on experience in software development.",
+        "I would appreciate being considered for relevant software development work at srd.exchange. I’ve contributed to production e-commerce applications, balancing maintainable React/Next.js code with performance and delivery.",
+        "An opportunity to introduce my work to the hiring team would mean a lot to me. Thank you for considering my profile.",
+        "I've included my resume and portfolio for your review. Thank you for taking a look.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0420",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@syntechweb.com",
+      "company": "Syntechweb",
+      "category": "frontend development",
+      "subject": "Software Developer Opportunities at Syntechweb | Resume Attached",
+      "message": [
+        "Hello,",
+        "I'm Mahendra, currently exploring the next step in my software engineering career after nearly 2 years of production experience.",
+        "I'm writing to express interest in Software Developer opportunities involving React.js or Next.js at Syntechweb. My recent work includes responsive React interfaces, API integrations and performance improvements on live applications.",
+        "I'd value the opportunity to discuss a relevant position and would appreciate any guidance on the application process.",
+        "My latest resume is attached, and my portfolio is linked below. Thank you for your time.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0421",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact | SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@tekstartechnologies.com",
+      "company": "tekstartechnologies.com",
+      "category": "software developer",
+      "subject": "Software Developer Opportunities at tekstartechnologies.com | Resume Attached",
+      "message": [
+        "Hello,",
+        "My name is Mahendra Singh Puniya. I have nearly 2 years of hands-on experience in software development.",
+        "I'm reaching out to learn about possible Full Stack Developer or Software Developer opportunities at tekstartechnologies.com. I’ve designed and integrated more than 29 production APIs alongside developing React/Next.js features.",
+        "An opportunity to introduce my work to the hiring team would mean a lot to me. Thank you for considering my profile.",
+        "I appreciate your time and consideration. You can find my recent work in the attached resume and linked portfolio.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeB.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0422",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@v5software.com",
+      "company": "v5software.com",
+      "category": "software developer",
+      "subject": "Software Developer Opportunities at v5software.com | Resume Attached",
+      "message": [
+        "Hello,",
+        "I'm Mahendra, currently exploring the next step in my software engineering career after nearly 2 years of production experience.",
+        "I would appreciate being considered for relevant software development work at v5software.com. I’ve worked with JavaScript, TypeScript, React, Next.js, REST APIs and databases to ship real-world software.",
+        "Please feel free to review my attached resume and portfolio; I'd be glad to share more details about my work.",
+        "I've attached my resume for reference and included my portfolio to make it easy to explore my work.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeB.pdf",
+      "manual_skip": true,
+      "review": {
+        "lead_id": "M-0423",
+        "source_decision": "Review",
+        "next_action": "Verify company, role and email before drafting",
+        "reason": "SP1: Source thread is service/freelance outreach, not a standard job application",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@vpatrol.co.in",
+      "company": "Vpatrol",
+      "category": "frontend development",
+      "subject": "Software Developer Opportunities at Vpatrol | Resume Attached",
+      "message": [
+        "Hello,",
+        "I'm Mahendra, a Software Developer with nearly 2 years of experience building production web applications.",
+        "I'd like to share my profile for any suitable Software Developer opportunities involving React.js or Next.js at Vpatrol. I’ve delivered production features using React.js, Next.js and TypeScript, with an emphasis on clean components and reliable user experiences.",
+        "An opportunity to introduce my work to the hiring team would mean a lot to me. Thank you for considering my profile.",
+        "My latest resume is attached, and my portfolio is linked below. Thank you for your time.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0424",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@webixinfotech.com",
+      "company": "Webixinfotech",
+      "category": "frontend development",
+      "subject": "Software Developer / SDE-1 – Application Inquiry | Webixinfotech",
+      "message": [
+        "Hello,",
+        "I'm Mahendra Singh Puniya, and I've spent nearly 2 years developing and shipping software for live products.",
+        "I would appreciate being considered for relevant software development work at Webixinfotech. My hands-on experience covers React.js, Next.js, JavaScript, TypeScript and taking customer-facing features through production release.",
+        "I would appreciate the chance to have my resume considered for a suitable role, or to be directed to the right person on your team.",
+        "I've attached my resume for reference and included my portfolio to make it easy to explore my work.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0425",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact | SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "info@yorotechnologies.com",
+      "company": "yorotechnologies.com",
+      "category": "software developer",
+      "subject": "Software Developer Opportunities at yorotechnologies.com | Resume Attached",
+      "message": [
+        "Hello,",
+        "I'm Mahendra Singh Puniya, a Software Developer with nearly 2 years of professional experience.",
+        "I'm writing to express interest in Software Developer or SDE-1 opportunities at yorotechnologies.com. I enjoy building maintainable products, improving performance and taking ownership of features from implementation to deployment.",
+        "If there is a current or upcoming role that fits my background, I would be grateful for the opportunity to be considered.",
+        "I appreciate your time and consideration. You can find my recent work in the attached resume and linked portfolio.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeB.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0426",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "innoquora@gmail.com",
+      "company": "Not identified",
+      "category": "frontend development",
+      "subject": "Application Inquiry – Software Developer (React / Next.js) | Resume",
+      "message": [
+        "Hello,",
+        "I'm Mahendra, a software engineer with nearly 2 years of experience working on real-world web products.",
+        "I would appreciate being considered for relevant software development work. My hands-on experience covers React.js, Next.js, JavaScript, TypeScript and taking customer-facing features through production release.",
+        "If there is a current or upcoming role that fits my background, I would be grateful for the opportunity to be considered.",
+        "I appreciate your time and consideration. You can find my recent work in the attached resume and linked portfolio.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": true,
+      "review": {
+        "lead_id": "M-0427",
+        "source_decision": "Review",
+        "next_action": "Verify company, role and email before drafting",
+        "reason": "SP2: Public email with unverified company",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "inquiry.ankdigitalmedia@gmail.com",
+      "company": "Not identified",
+      "category": "frontend development",
+      "subject": "Software Developer / SDE-1 – Application Inquiry | Resume",
+      "message": [
+        "Hello,",
+        "I'm Mahendra Singh Puniya, and I've spent nearly 2 years developing and shipping software for live products.",
+        "I would appreciate being considered for relevant software development work. I’ve contributed to production e-commerce applications, balancing maintainable React/Next.js code with performance and delivery.",
+        "I would be grateful if you could review my profile or point me toward an appropriate software engineering opportunity.",
+        "My latest resume is attached, and my portfolio is linked below. Thank you for your time.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": true,
+      "review": {
+        "lead_id": "M-0428",
+        "source_decision": "Review",
+        "next_action": "Verify company, role and email before drafting",
+        "reason": "SP2: Public email with unverified company",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Insoftlink",
+      "email": "insoftlink.manager@gmail.com",
+      "company": "Not identified",
+      "category": "frontend development",
+      "subject": "Full Stack Developer / SDE-1 | Resume Attached",
+      "message": [
+        "Hi Insoftlink,",
+        "My name is Mahendra Singh Puniya. I have nearly 2 years of hands-on experience in software development.",
+        "I'm actively exploring Software Developer opportunities involving React.js or Next.js and wanted to introduce my experience. I enjoy building reusable components, integrating APIs and improving the speed and usability of real-world web applications.",
+        "An opportunity to introduce my work to the hiring team would mean a lot to me. Thank you for considering my profile.",
+        "Please find my resume attached. I'd be happy to provide any additional information.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0429",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "ipshita@tortoise.pro",
+      "company": "tortoise.pro",
+      "category": "software developer",
+      "subject": "Application Inquiry – Software Developer (React / Next.js) | tortoise.pro",
+      "message": [
+        "Hello,",
+        "I'm Mahendra, currently exploring the next step in my software engineering career after nearly 2 years of production experience.",
+        "I'd like to share my profile for any suitable Full Stack Developer or Software Developer opportunities at tortoise.pro. I work across React.js, Next.js, TypeScript, Node.js, REST APIs and PostgreSQL/MongoDB to deliver end-to-end features.",
+        "If there is a current or upcoming role that fits my background, I would be grateful for the opportunity to be considered.",
+        "I've included my resume and portfolio for your review. Thank you for taking a look.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeB.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0430",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Isaac Enriquez",
+      "email": "isaac.enriquez@emi-solutions.biz",
+      "company": "Emi Solutions",
+      "category": "frontend development",
+      "subject": "Software Developer Opportunities at Emi Solutions | Mahendra Puniya",
+      "message": [
+        "Hi Isaac,",
+        "I'm Mahendra, a software engineer with nearly 2 years of experience working on real-world web products.",
+        "I'm exploring my next software engineering role and thought my experience could be relevant for Emi Solutions. My hands-on experience covers React.js, Next.js, JavaScript, TypeScript and taking customer-facing features through production release.",
+        "I would be grateful if you could review my profile or point me toward an appropriate software engineering opportunity.",
+        "I've attached my resume for reference and included my portfolio to make it easy to explore my work.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": true,
+      "review": {
+        "lead_id": "M-0431",
+        "source_decision": "Review",
+        "next_action": "Check Gmail for existing draft or sent email",
+        "reason": "SP1: Part-time/freelance/contract context | SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Isha",
+      "email": "ishagupta.plabs@gmail.com",
+      "company": "Not identified",
+      "category": "frontend development",
+      "subject": "Software Developer Opportunities | Resume – Mahendra Puniya",
+      "message": [
+        "Hi Isha,",
+        "I'm Mahendra, a software engineer with nearly 2 years of experience working on real-world web products.",
+        "I'd appreciate the opportunity to be considered for Software Developer opportunities involving React.js or Next.js. I’ve worked on high-traffic web products and helped improve Lighthouse scores from 65 to 90 while reducing LCP by around 40%.",
+        "I'd value the opportunity to discuss a relevant position and would appreciate any guidance on the application process.",
+        "Thank you for considering my background. My resume is attached, with project details available through my portfolio.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0432",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Itjobs",
+      "email": "itjobs@instantnauri.com",
+      "company": "instantnauri.com",
+      "category": "frontend development",
+      "subject": "DO NOT SEND — excluded contact",
+      "message": [
+        "This contact is excluded from outreach.\nReason: SP1: Delivery failed in source list"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": true,
+      "review": {
+        "lead_id": "M-0433",
+        "source_decision": "Skip",
+        "next_action": "Do not contact",
+        "reason": "SP1: Delivery failed in source list",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Jagriti Sharma",
+      "email": "jagriti.sharma@xicom.biz",
+      "company": "Xicom",
+      "category": "software developer",
+      "subject": "Software Developer Opportunities at Xicom | Mahendra Puniya",
+      "message": [
+        "Hi Jagriti,",
+        "I'm Mahendra, a software engineer with nearly 2 years of experience working on real-world web products.",
+        "I'm exploring my next software engineering role and thought my experience could be relevant for Xicom. My projects have involved frontend delivery, API design, debugging, database integration and production deployment.",
+        "I would appreciate the chance to have my resume considered for a suitable role with Xicom, or to be directed to the right person on your team.",
+        "I've attached my resume for reference and included my portfolio to make it easy to explore my work.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeB.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0434",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft or sent email",
+        "reason": "SP1: Relevant engineering/recruiting contact | SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach; Additional contact at same company — stagger outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Jaidyn",
+      "email": "jaidyn.l.shahan@boeing.com",
+      "company": "boeing.com",
+      "category": "software developer",
+      "subject": "Application Inquiry – Software Developer | Boeing",
+      "message": [
+        "Hi Jaidyn,",
+        "My name is Mahendra Singh Puniya. I have nearly 2 years of hands-on experience in software development.",
+        "I'd like to be considered for a suitable software engineering opportunity at Boeing. I enjoy building maintainable products, improving performance and taking ownership of features from implementation to deployment.",
+        "I would appreciate the chance to have my resume considered for a suitable role with Boeing, or to be directed to the right person on your team.",
+        "Thank you for considering my background. My resume is attached, with project details available through my portfolio.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeB.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0435",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Jakidul",
+      "email": "jakidul.islam@ordiple.com",
+      "company": "ordiple.com",
+      "category": "frontend development",
+      "subject": "Software Developer – React / Next.js | ordiple.com",
+      "message": [
+        "Hi Jakidul,",
+        "I'm Mahendra, a Software Developer with nearly 2 years of experience building production web applications.",
+        "I'd like to explore whether my software development background could contribute to the team at ordiple.com. My recent work includes responsive React interfaces, API integrations and performance improvements on live applications.",
+        "An opportunity to introduce my work to the hiring team would mean a lot to me. Thank you for considering my profile.",
+        "I've attached my resume for reference and included my portfolio to make it easy to explore my work.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0436",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Riah",
+      "email": "japanesecareerup@gmail.com",
+      "company": "Not identified",
+      "category": "frontend development",
+      "subject": "Full Stack Developer / SDE-1 | Resume Attached",
+      "message": [
+        "Hi Riah,",
+        "I'm Mahendra, a Software Developer with nearly 2 years of experience building production web applications.",
+        "I'm reaching out to ask about Software Developer opportunities involving React.js or Next.js. I enjoy building reusable components, integrating APIs and improving the speed and usability of real-world web applications.",
+        "If there is a current or upcoming role that fits my background, I would be grateful for the opportunity to be considered.",
+        "I appreciate your time and consideration. You can find my recent work in the attached resume and linked portfolio.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0437",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Jaspreet",
+      "email": "jaspreet.kaur@matrixmarketers.com",
+      "company": "matrixmarketers.com",
+      "category": "frontend development",
+      "subject": "Full Stack / Software Developer Inquiry | matrixmarketers.com",
+      "message": [
+        "Hi Jaspreet,",
+        "I'm Mahendra Singh Puniya, a Software Developer with nearly 2 years of professional experience.",
+        "I'd like to explore whether my software development background could contribute to the team at matrixmarketers.com. My hands-on experience covers React.js, Next.js, JavaScript, TypeScript and taking customer-facing features through production release.",
+        "I would appreciate the chance to have my resume considered for a suitable role with matrixmarketers.com, or to be directed to the right person on your team.",
+        "I've attached my resume for reference and included my portfolio to make it easy to explore my work.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0438",
+        "source_decision": "Ready",
+        "next_action": "Review response before follow-up",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Sent - confirmed",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Jatin",
+      "email": "jatin@designoweb.com",
+      "company": "Designoweb",
+      "category": "frontend development",
+      "subject": "Full Stack / Software Developer Inquiry | Designoweb",
+      "message": [
+        "Hi Jatin,",
+        "I'm Mahendra, a Software Developer with nearly 2 years of experience building production web applications.",
+        "I'm interested in potential Software Developer opportunities involving React.js or Next.js at Designoweb. My recent work includes responsive React interfaces, API integrations and performance improvements on live applications.",
+        "I'd value the opportunity to discuss a relevant position and would appreciate any guidance on the application process.",
+        "Please find my resume attached. I'd be happy to provide any additional information.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0439",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach; Additional contact at same company — stagger outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Jayshree",
+      "email": "jayshree.p@sghsglobal.com",
+      "company": "sghsglobal.com",
+      "category": "frontend development",
+      "subject": "Software Developer Opportunities at sghsglobal.com | Mahendra Puniya",
+      "message": [
+        "Hi Jayshree,",
+        "My name is Mahendra Singh Puniya. I have nearly 2 years of hands-on experience in software development.",
+        "I'd like to explore whether my software development background could contribute to the team at sghsglobal.com. My recent work includes responsive React interfaces, API integrations and performance improvements on live applications.",
+        "I'd value the opportunity to discuss a relevant position and would appreciate any guidance on the application process.",
+        "Please find my resume attached. I'd be happy to provide any additional information.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0440",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Jitendra",
+      "email": "jitendra.kashyap@pivotal-leap.com",
+      "company": "pivotal-leap.com",
+      "category": "frontend development",
+      "subject": "Exploring Software Engineering Roles at pivotal-leap.com | Resume",
+      "message": [
+        "Hi Jitendra,",
+        "I'm Mahendra, currently exploring the next step in my software engineering career after nearly 2 years of production experience.",
+        "I'd like to explore whether my software development background could contribute to the team at pivotal-leap.com. I’ve delivered production features using React.js, Next.js and TypeScript, with an emphasis on clean components and reliable user experiences.",
+        "I would be grateful if you could review my profile or point me toward an appropriate software engineering opportunity.",
+        "I've included my resume and portfolio for your review. Thank you for taking a look.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0441",
+        "source_decision": "Ready",
+        "next_action": "Review response before follow-up",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Sent - confirmed",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "jitesh.sharma@srvmedia.com",
+      "company": "srvmedia.com",
+      "category": "frontend development",
+      "subject": "Resume – Software Developer Opportunities at srvmedia.com",
+      "message": [
+        "Hello,",
+        "I'm Mahendra Singh Puniya, and I've spent nearly 2 years developing and shipping software for live products.",
+        "I'm reaching out to learn about possible Software Developer opportunities involving React.js or Next.js at srvmedia.com. I’ve delivered production features using React.js, Next.js and TypeScript, with an emphasis on clean components and reliable user experiences.",
+        "I would be grateful if you could review my profile or point me toward an appropriate software engineering opportunity.",
+        "My latest resume is attached, and my portfolio is linked below. Thank you for your time.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0442",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "job@raahupsc.com",
+      "company": "Raahupsc",
+      "category": "software developer",
+      "subject": "Resume – Software Developer Opportunities at Raahupsc",
+      "message": [
+        "Hello,",
+        "I'm Mahendra, a software engineer with nearly 2 years of experience working on real-world web products.",
+        "I'm reaching out to learn about possible Software Developer or SDE-1 opportunities at Raahupsc. I’ve contributed to customer-facing products through feature development, API integration, testing and production releases.",
+        "An opportunity to introduce my work to the hiring team would mean a lot to me. Thank you for considering my profile.",
+        "I've attached my resume for reference and included my portfolio to make it easy to explore my work.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeB.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0443",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact | SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach; Confirm this was a hiring contact; Additional contact at same company — stagger outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "jobs+319@hiringgo.com",
+      "company": "hiringgo.com",
+      "category": "frontend development",
+      "subject": "Software Developer Profile for Relevant Openings | Mahendra Puniya",
+      "message": [
+        "Hello Hiring Team,",
+        "My name is Mahendra Singh Puniya. I have nearly 2 years of hands-on experience in software development.",
+        "I'm reaching out to ask whether you're recruiting for Software Developer opportunities involving React.js or Next.js. I’ve delivered production features using React.js, Next.js and TypeScript, with an emphasis on clean components and reliable user experiences.",
+        "I'd value your consideration for a suitable opening and any advice on where my profile may fit.",
+        "My latest resume is attached, and my portfolio is linked below. Thank you for your time.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0444",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "jobs+328@hiringgo.com",
+      "company": "hiringgo.com",
+      "category": "frontend development",
+      "subject": "Full Stack / Software Developer Roles – Referral Request",
+      "message": [
+        "Hello Hiring Team,",
+        "My name is Mahendra Singh Puniya. I have nearly 2 years of hands-on experience in software development.",
+        "I'd appreciate your help connecting with a team seeking experience in React/Next.js development. I enjoy building reusable components, integrating APIs and improving the speed and usability of real-world web applications.",
+        "If my experience aligns with any current or upcoming requirements, I'd be grateful if you could forward my resume to the right recruiter.",
+        "Please find my resume attached. I'd be happy to provide any additional information.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0445",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "jobs@ananyafinance.com",
+      "company": "Ananyafinance",
+      "category": "frontend development",
+      "subject": "Software Developer Opportunities at Ananyafinance | Resume Attached",
+      "message": [
+        "Hello Hiring Team,",
+        "I'm Mahendra, a software engineer with nearly 2 years of experience working on real-world web products.",
+        "I'd like to share my profile for any suitable Software Developer opportunities involving React.js or Next.js at Ananyafinance. My recent work includes responsive React interfaces, API integrations and performance improvements on live applications.",
+        "An opportunity to introduce my work to the hiring team would mean a lot to me. Thank you for considering my profile.",
+        "I've attached my resume for reference and included my portfolio to make it easy to explore my work.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0446",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft or sent email",
+        "reason": "SP1: Relevant engineering/recruiting contact | SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "jobs@appcartsystems.com",
+      "company": "appcartsystems.com",
+      "category": "frontend development",
+      "subject": "Resume – Software Developer Opportunities at appcartsystems.com",
+      "message": [
+        "Hello Hiring Team,",
+        "I'm Mahendra, a software engineer with nearly 2 years of experience working on real-world web products.",
+        "I'm reaching out to learn about possible Software Developer opportunities involving React.js or Next.js at appcartsystems.com. I enjoy building reusable components, integrating APIs and improving the speed and usability of real-world web applications.",
+        "If there is a current or upcoming role that fits my background, I would be grateful for the opportunity to be considered.",
+        "I've attached my resume for reference and included my portfolio to make it easy to explore my work.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0447",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "jobs@boostindia.in",
+      "company": "Boostindia",
+      "category": "software developer",
+      "subject": "Application Inquiry – Software Developer (React / Next.js) | Boostindia",
+      "message": [
+        "Hello Hiring Team,",
+        "I'm Mahendra Singh Puniya, and I've spent nearly 2 years developing and shipping software for live products.",
+        "I'm writing to express interest in Software Developer or SDE-1 opportunities at Boostindia. I enjoy building maintainable products, improving performance and taking ownership of features from implementation to deployment.",
+        "Please feel free to review my attached resume and portfolio; I'd be glad to share more details about my work.",
+        "My latest resume is attached, and my portfolio is linked below. Thank you for your time.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeB.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0448",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft or sent email",
+        "reason": "SP1: Relevant engineering/recruiting contact | SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "jobs@happylocate.com",
+      "company": "Happylocate",
+      "category": "frontend development",
+      "subject": "Resume – Software Developer Opportunities at Happylocate",
+      "message": [
+        "Hello Hiring Team,",
+        "I'm Mahendra, currently exploring the next step in my software engineering career after nearly 2 years of production experience.",
+        "I'd like to share my profile for any suitable Software Developer opportunities involving React.js or Next.js at Happylocate. My hands-on experience covers React.js, Next.js, JavaScript, TypeScript and taking customer-facing features through production release.",
+        "I would appreciate the chance to have my resume considered for a suitable role, or to be directed to the right person on your team.",
+        "My latest resume is attached, and my portfolio is linked below. Thank you for your time.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0449",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    },
+    {
+      "name": "Hiring Team",
+      "email": "jobs@kalamntina.com",
+      "company": "Kalamntina",
+      "category": "frontend development",
+      "subject": "Software Developer Opportunities at Kalamntina | Resume Attached",
+      "message": [
+        "Hello Hiring Team,",
+        "I'm Mahendra, a software engineer with nearly 2 years of experience working on real-world web products.",
+        "I'm writing to express interest in Software Developer opportunities involving React.js or Next.js at Kalamntina. I’ve contributed to production e-commerce applications, balancing maintainable React/Next.js code with performance and delivery.",
+        "I would appreciate the chance to have my resume considered for a suitable role, or to be directed to the right person on your team.",
+        "Thank you for considering my background. My resume is attached, with project details available through my portfolio.",
+        "Portfolio: https://pooniya.com",
+        "Best regards,\nMahendra Singh Puniya\n+91 7568265755\nmahendrapuniya92@gmail.com"
+      ],
+      "resume": "resume/mahendra_resumeA.pdf",
+      "manual_skip": false,
+      "review": {
+        "lead_id": "M-0450",
+        "source_decision": "Ready",
+        "next_action": "Check Gmail for existing draft/sent before creating",
+        "reason": "SP1: Relevant engineering/recruiting contact | SP2: Suitable lead; source is another person's sent mail, not Mahendra outreach",
+        "gmail_status": "Not verified",
+        "source_resume": "mahendra_resume.pdf",
+        "resume_selection": "Selected by role bucket; verify before sending."
+      }
+    }
+  ]
+}

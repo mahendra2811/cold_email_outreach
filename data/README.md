@@ -33,7 +33,7 @@ ColdOutrichAutoEmail/
 ## Flow
 
 1. **Source:** Open `data/upcoming/master_email_list.xlsx` and use the **Master Contacts** sheet. It contains one row per contact, suggested subjects and bodies, and review information. The workbook is the source, not the active send queue.
-2. **Prepare a batch:** Copy the chosen contact rows into a JSON file under `data/upcoming_json/`, using the format below. `master-first-50.json` contains the first 50 rows of Master Contacts in sheet order. Batch sizes are your choice. At present there is **no command that automatically creates the next batch**; it must be prepared before use.
+2. **Prepare a batch:** Copy the chosen contact rows into a JSON file under `data/upcoming_json/`, using the format below. `master-first-50.json` contains the first 50 rows of Master Contacts in sheet order. The remaining source rows are already prepared as `master-050-100.json` through `master-750-773.json` in the same folder. Ranges use zero-based positions with the end excluded: `050-100` means contacts 51–100. Each full file contains 50 contacts; the last contains 23. Batch sizes for sending are your choice. There is no command to automatically prepare batches from a changed master workbook.
 3. **Review:** Check each address, name, subject, complete message, attachment, source decision and review note. Check Gmail history when appropriate: the master workbook does not confirm whether Mahendra has previously contacted these people. The first 50 contain 40 source rows marked Ready, seven Review and three Skip; the latter 10 have `manual_skip: true`. Change a disabled entry to `false` only after reviewing it.
 4. **Activate:** Move or copy the reviewed batch into `data/email_json/`, first moving out the fictional examples and any other files you do not intend to send. Keep a review copy if useful.
 5. **Check:** Run the stats and preview commands below. Read the preview and resolve any reported errors before sending.
@@ -82,13 +82,13 @@ Add more entries to the same `emails` array, separated by commas. Do not put Gma
 
 ## Resume files
 
-| Category | Project-relative PDF |
-| --- | --- |
+| Category               | Project-relative PDF          |
+| ---------------------- | ----------------------------- |
 | `frontend development` | `resume/mahendra_resumeA.pdf` |
-| `software developer` | `resume/mahendra_resumeB.pdf` |
-| `android developer` | `resume/mahendra_resumeC.pdf` |
-| `freelancing work` | `resume/mahendra_resumeD.pdf` |
-| `ai developer` | `resume/mahendra_resumeE.pdf` |
+| `software developer`   | `resume/mahendra_resumeB.pdf` |
+| `android developer`    | `resume/mahendra_resumeC.pdf` |
+| `freelancing work`     | `resume/mahendra_resumeD.pdf` |
+| `ai developer`         | `resume/mahendra_resumeE.pdf` |
 
 Change the PDF path in an individual JSON entry to choose a different attachment for that recipient. If relying on category lookup, edit the category's path in `attachment-categories.json`. Always preview after a change.
 
@@ -159,3 +159,14 @@ The JSON workflow uses `--json data/email_json`; it does not read `HR_Contacts.x
 - **Missing credentials or Gmail login error:** check the chosen account's `.env` settings and Gmail app password; do not put credentials in the queue file.
 - **Fewer than the cap sent:** the queue may be exhausted, entries may be skipped or invalid, or the account's daily cap may already have been reached. Check the summary and errors.
 - **Unexpected fictional recipients:** remove or move `data/email_json/emails.json` before activating a real batch.
+
+### Choose one JSON file and another account
+
+To use a particular file instead of the default `data/email_json` folder, add `--json` with the file path. For example, check a reviewed batch against account 1's log and then preview it:
+
+```bash
+npm run mail:stats -- --json data/upcoming_json/master-050-100.json --sent-log sent.1.log
+npm run mail:preview -- --json data/upcoming_json/master-050-100.json --sent-log sent.1.log --count 50
+```
+
+After review and confirmation, send from that account with `npm run mail:send -- --json data/upcoming_json/master-050-100.json --account 1 --live --cap 50 --daily-cap 50`. The shortcuts accept the explicit `--json` path in place of their default directory. Single-account sends only consult that account's log; check other account logs before switching. See the root `SEND_EMAILS.md` for proof-only and account examples.

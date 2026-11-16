@@ -77,6 +77,31 @@ That example waits between 60 and 80 seconds between emails. With default pacing
 
 ## Prepare and review new batches
 
-The source is `data/upcoming/master_email_list.xlsx`, on the **Master Contacts** sheet. The first 50 are in `data/upcoming_json/master-first-50.json`; the 10 source rows marked Review or Skip have `manual_skip: true`. Review Gmail history, content, addresses and resume selection before making a batch active. `manual_skip: true` excludes an entry; change it to the JSON boolean `false` only after review. A command to automatically produce subsequent batches has not yet been implemented.
+The source is `data/upcoming/master_email_list.xlsx`, on the **Master Contacts** sheet. The first 50 are in `data/upcoming_json/master-first-50.json`; the 10 source rows marked Review or Skip have `manual_skip: true`. Review Gmail history, content, addresses and resume selection before making a batch active. `manual_skip: true` excludes an entry; change it to the JSON boolean `false` only after review. The remaining contacts are prepared as files `master-050-100.json` through `master-750-773.json` in `data/upcoming_json/`. Each file needs review before activation; there is no command to automatically rebuild batches from an updated master workbook.
 
 For the JSON format, resume mapping, troubleshooting, and full data flow, see [data/README.md](data/README.md).
+
+## Select a different JSON file and account
+
+You do not need to replace `data/email_json/emails.json`. Add `--json` with the exact file you want. The file can be in `data/upcoming_json/` or another folder. Review it first: files in `upcoming_json` are prepared for review and are not automatically approved. The last `--json` option overrides the shortcut's default folder.
+
+For example, to review `master-050-100.json` against **account 1's** sent history:
+
+```bash
+npm run mail:stats -- --json data/upcoming_json/master-050-100.json --sent-log sent.1.log
+npm run mail:preview -- --json data/upcoming_json/master-050-100.json --sent-log sent.1.log --count 50
+```
+
+After reviewing the batch, optionally send a proof from account 1:
+
+```bash
+npm run mail:proof -- --json data/upcoming_json/master-050-100.json --account 1 --live
+```
+
+After the batch is reviewed and confirmed, send up to 50 from account 1:
+
+```bash
+npm run mail:send -- --json data/upcoming_json/master-050-100.json --account 1 --live --cap 50 --daily-cap 50
+```
+
+For another batch, change the filename. For the first or third configured account, change the account to `0` or `2`, and use `sent.log` or `sent.2.log` for its stats and preview. Each account has a separate sent log; single-account runs do not consult the other logs, so check the other account's history before switching to avoid sending the same address twice. Disabled rows are still skipped, so a 50-row file can send fewer than 50 emails.
